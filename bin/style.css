@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.nav .logo img {
+    height: 50px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 49px;
+}
+
+.search-bar img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.home {
+    background-image: url('img/bitcoin-1813503_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.home-content {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    color: white;
+    text-align: justify;
+}
+
+.home h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.trending-news {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.trending-news h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.trending-news ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.trending-news ul li {
+    margin-bottom: 10px;
+}
+
+.trending-news ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.load-more {
+    background-color: #ff8766;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Additional styling for better presentation */
+
+.nav-links ul li a:hover {
+    color: #ff8766;
+    transition: color 0.3s ease;
+}
+
+.search-bar:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.home {
+    position: relative;
+    z-index: 1;
+}
+
+.trending-news ul li a:hover {
+    color: #ff8766;
+    text-decoration: underline;
+}
+
+.load-more:hover {
+    background-color: #e06d4f;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
